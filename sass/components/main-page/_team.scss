@@ -16,16 +16,18 @@
   margin-top: 16px;
   margin-bottom: 30px;
 }
-.icon-team__list:hover,
-.icon-team__list:focus {
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: var(--third-color);
-  fill: var(--main-color);
-  transform: scale(1.15);
-}
-.icon-team__list:not(:last-child) {
-  margin-right: 10px;
+.icon-team__list {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--third-color);
+    fill: var(--main-color);
+    transform: scale(1.15);
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .icon-team__link {

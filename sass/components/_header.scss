@@ -18,26 +18,30 @@
   position: relative;
 }
 
-.site-nav__current-link--underline-studiya::after {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: 45px;
-  width: 48px;
-  height: 4px;
-  border-radius: 2px;
-  background: var(--third-color);
+.site-nav__current-link--underline-studiya {
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--third-color);
+  }
 }
 
-.site-nav__current-link--underline-portfolio::after {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: 45px;
-  width: 76px;
-  height: 4px;
-  border-radius: 2px;
-  background: var(--third-color);
+.site-nav__current-link--underline-portfolio {
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    width: 76px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--third-color);
+  }
 }
 
 .site-nav,
@@ -69,8 +73,10 @@
 .site-nav__list {
   margin-right: 50px;
 }
-.main-addres__link:not(:last-child) {
-  margin-right: 50px;
+.main-addres__link {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .main-addres__link--color {

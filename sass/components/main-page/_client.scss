@@ -21,8 +21,10 @@
   fill: var(--icon-color);
 }
 
-.client__list-element:not(:last-child) {
-  margin-right: 30px;
+.client__list-element {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .client__link {
   display: flex;
@@ -40,11 +42,10 @@
     border-color: var(--third-color);
     transform: scale(1.25);
   }
-}
-
-.client__link:hover .client__icon,
-.client__link:focus .client__icon {
-  fill: var(--third-color);
-  border-color: var(--third-color);
-  transform: scale(1.25);
+  &:hover .client__icon,
+  &:focus .client__icon {
+    fill: var(--third-color);
+    border-color: var(--third-color);
+    transform: scale(1.25);
+  }
 }

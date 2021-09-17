@@ -37,6 +37,8 @@
   }
 }
 
-.join__list-element:not(:last-child) {
-  margin-right: 10px;
+.join__list-element {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
